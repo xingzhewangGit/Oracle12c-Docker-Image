@@ -8,8 +8,8 @@ https://www.oracle.com/database/technologies/oracle-database-software-downloads.
 and save in the respective dockerfiles subdirectory, e.g. docker-images/OracleDatabase/SingleInstance/dockerfiles/12.1.0.2
 
 3, create the image by running
-# ./buildDockerImage.sh -v 12.1.0.2 -s        for standard edition of 12c release 1, or
-# ./buildDockerImage.sh -v 12.2.0.1 -e        for enterprise edition of 12c release 2
+>_ ./buildDockerImage.sh -v 12.1.0.2 -s        for standard edition of 12c release 1, or
+>_ ./buildDockerImage.sh -v 12.2.0.1 -e        for enterprise edition of 12c release 2
 
 
 
@@ -28,4 +28,12 @@ please add below in your docker Docker daemon configuration file daemon.json
 10.75.0.1 here is the DNS you are using, you can replace it with your actual DNS.
 
 to know your actual DNS, you can run below on your Mac
-# dig yum.oracle.com -4
+>_ dig yum.oracle.com -4
+or 
+>_ docker run busybox nslookup github.com
+
+
+reference:
+https://sqlmaria.com/2017/04/27/oracle-database-12c-now-available-on-docker/
+https://development.robinwinslow.uk/2016/06/23/fix-docker-networking-dns/#the-permanent-system-wide-fix
+
