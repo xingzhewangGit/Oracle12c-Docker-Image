@@ -11,11 +11,16 @@ and save in the respective dockerfiles subdirectory, e.g. docker-images/OracleDa
 >_ ./buildDockerImage.sh -v 12.1.0.2 -s        for standard edition of 12c release 1, or
 >_ ./buildDockerImage.sh -v 12.2.0.1 -e        for enterprise edition of 12c release 2
 
+4, finally you will see
+Successfully built 7f9b9a83626d
+Successfully tagged oracle/database:12.1.0.2-se2
+  Oracle Database Docker Image for 'se2' version 12.1.0.2 is ready to be extended:     
+    --> oracle/database:12.1.0.2-se2
+
+5, 
 
 
-
-
-Possible Exceptions you may counter 
+# Possible Exceptions you may counter 
 when you see below error:
 COPY failed: stat /var/lib/docker/tmp/docker-builder594691303/linuxamd64_12102_database_se2_1of2.zip: no such file or directory
 please double check if you've downloaded the right installation file from Oracle website
