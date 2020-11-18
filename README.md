@@ -1,4 +1,4 @@
-# Oracle12c-Docker-Image
+# to build Oracle12c-Docker-Image
 to build the Oracle12c Docker Image
 
 1, clone the repo of Official source for Docker configurations, images, Dockerfiles for Oracle products from https://github.com/oracle/docker-images
@@ -18,9 +18,6 @@ Successfully tagged oracle/database:12.1.0.2-se2
   Oracle Database Docker Image for 'se2' version 12.1.0.2 is ready to be extended:     
     --> oracle/database:12.1.0.2-se2
 
-5, 
-
-
 # Possible Exceptions you may counter 
 when you see below error:
 COPY failed: stat /var/lib/docker/tmp/docker-builder594691303/linuxamd64_12102_database_se2_1of2.zip: no such file or directory
@@ -37,6 +34,8 @@ to know your actual DNS, you can run below on your Mac
 >_ dig yum.oracle.com -4
 or 
 >_ docker run busybox nslookup github.com
+
+# to run it 
 
 
 reference:
