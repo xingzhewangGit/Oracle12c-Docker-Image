@@ -8,7 +8,8 @@ https://www.oracle.com/database/technologies/oracle-database-software-downloads.
 and save in the respective dockerfiles subdirectory, e.g. docker-images/OracleDatabase/SingleInstance/dockerfiles/12.1.0.2
 
 3, create the image by running
->_ ./buildDockerImage.sh -v 12.1.0.2 -s        for standard edition of 12c release 1, or
+>_ ./buildDockerImage.sh -v 12.1.0.2 -s        for standard edition of 12c release 1, 
+or
 >_ ./buildDockerImage.sh -v 12.2.0.1 -e        for enterprise edition of 12c release 2
 
 4, finally you will see
