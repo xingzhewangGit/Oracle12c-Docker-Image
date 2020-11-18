@@ -8,9 +8,13 @@ https://www.oracle.com/database/technologies/oracle-database-software-downloads.
 and save in the respective dockerfiles subdirectory, e.g. docker-images/OracleDatabase/SingleInstance/dockerfiles/12.1.0.2
 
 3, create the image by running
->_ ./buildDockerImage.sh -v 12.1.0.2 -s        for standard edition of 12c release 1, 
+>_ ./buildDockerImage.sh -v 12.1.0.2 -s        for standard edition of 12c release 1
+
 or
 >_ ./buildDockerImage.sh -v 12.2.0.1 -e        for enterprise edition of 12c release 2
+
+or
+>_ ./buildDockerImage.sh -v 18.4.0 -x 
 
 4, finally you will see
 Successfully built 7f9b9a83626d
@@ -36,6 +40,12 @@ or
 >_ docker run busybox nslookup github.com
 
 # to run it 
+>_ docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+oracle/database     18.4.0-xe           b7d3a210c3a0        23 minutes ago      319MB
+
+Docker run -d -it --name oracle18 -p 1599:1521 -p 5530:5500 -v /Users/jameswang/oradata:/opt/oracle/oradata oracle/database:18.4.0-xe
+
 
 
 reference:
