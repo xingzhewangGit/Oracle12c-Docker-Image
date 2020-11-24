@@ -52,3 +52,10 @@ reference:
 https://sqlmaria.com/2017/04/27/oracle-database-12c-now-available-on-docker/
 https://development.robinwinslow.uk/2016/06/23/fix-docker-networking-dns/#the-permanent-system-wide-fix
 
+
+
+
+
+Maven Install ojdbc8-12.2.0.1.jar
+
+mvn install:install-file -Dfile=ojdbc8-12.2.0.1.jar -DgroupId=com.oracle.jdbc -DartifactId=ojdbc8 -Dversion=12.2.0 -Dpackaging=jar
